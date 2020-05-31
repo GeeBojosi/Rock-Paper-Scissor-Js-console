@@ -4,10 +4,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome | Rock-Paper-Scissors</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Welcome to a game of rock, paper, scissors</h1>
+    <header>
+        <h1>Rock Paper Scissors &copy;</h1>
+    </header>
 
+    <div class="board">
+        <div class="player-tag">
+            <div class="player-label">PLAYER: <span id="player-score">0</span></div>
+            <!-- <div class="player-score">0</div> -->
+        </div>
+    
+        <div class="computer-tag">
+            <div class="computer-label"><span id="computer-score">0</span> :CPU</div>
+            <!-- <div class="CPU-score">0</div>         -->
+        </div>
+
+        <div class="result">
+            <p>Paper Scissors</p> 
+        </div>
+    
+    </div>
+    
+    <div class="choices">
+        <button class="btn" id="rock">Rock</button>
+        <button class="btn" id="paper">Paper</button>
+        <button class="btn" id="scissors">Scissors</button>
+    </div>
+
+    <p id="instruction">Click Rock, Paper or Scissors.</p>
+
+    <div class="rules">
+        <a href="https://en.wikipedia.org/wiki/Rock_paper_scissors">Click here for the rules</a>
+    </div>
     <script src="game.js"></script>
 </body>
 </html>
